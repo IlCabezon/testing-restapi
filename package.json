@@ -1,0 +1,22 @@
+{
+  "name": "testing-restapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "npx jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^28.0.3",
+    "morgan": "^1.10.0",
+    "supertest": "^6.2.3"
+  }
+}
