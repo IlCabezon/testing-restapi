@@ -5,18 +5,29 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "npx jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.18.1",
+    "mongoose": "^6.3.2",
     "uuid": "^8.3.2"
+  },
+  "jest":{
+    "name": "Organizer",
+    "jest": {
+      "verbose": true
+    },
+    "preset": "@shelf/jest-mongodb"
   },
   "devDependencies": {
     "jest": "^28.0.3",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
     "supertest": "^6.2.3"
   }
 }
